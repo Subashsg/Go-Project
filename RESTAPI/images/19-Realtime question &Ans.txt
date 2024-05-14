@@ -1,0 +1,96 @@
+plan 
+
+read question from ambition
+start the projet
+reveise algorithm and sql
+
+
+Wipro , Capgemini
+ 
+Q1. what is channel explain difference type of buffered and unbuffered?
+
+  
+  channel is keyword to communicate the goroutine. 
+  there are two type of channel one is Buffer channel and unbuffer channel 
+  
+  Buffer channel has capacity and this will block when buffer is full.
+
+  unbuffer doesn't have capacity.unbuffered channel, it blocks until there is a    corresponding receiver goroutine ready to receive the value.
+
+
+Q2. basics program on goroutines.expalin goroutine.explain parallisum and concurrency?
+
+ 
+concurrency is dealing multiple task
+
+parallisum is doing with mulitiple task.
+
+
+go func(){
+
+
+
+}{}
+
+Q3. design pattersns explain and write a program on singelton?
+
+  The singleton pattern ensures that a class(struct) has only one instance(object), and provides a global point of access to it.
+
+
+Q4. difference between microservice and monolithic you work an any payment?
+
+
+ monolithic :
+
+       a monolithic architecture, all the components of the application, such as the API, controllers, and database access logic, are typically contained within a single codebase or file. This can lead to a large and tightly coupled codebase.
+
+
+microservice:=
+
+     microservices architecture breaks down the application into smaller, independent services, where each service is responsible for a specific functionality or feature. Each microservice usually has its own codebase and can be deployed, scaled, and updated independently
+
+
+
+
+Q5. explain your project how do you work on unit testing?
+
+
+
+
+Q6. define array and slice?
+
+     Array having the fixed size and slice is not like that.
+     it is expandable.
+
+
+
+Q7. Why we use go,advantages of golang,does any other language support garbage collection,go routines why we use'multithreading ?
+
+ * Go is a fast, efficient, and built-in concurrency features.
+
+  * Go routines allow for easy and efficient concurrency without the need for   traditional multithreading.
+
+  * Auto Garpage collection
+
+  * Concurrency in Go can lead to parallelism, especially when running on multicore processors, 
+
+
+Q8. can we return difference data type and how ,what architeture you worked in your project,does go have oops concepts?
+
+
+  *an we return difference data type and how? - by using interface
+
+  *what architeture you worked in your project? - Microservice.
+
+  *does go have oops concepts? - yes struct and methods and embading srtuct and polymorphism (one interface method implemented by different struct)
+
+
+Q9. What is complicity faced in your project write a program on sorting
+
+
+    
+
+
+
+
+ 

@@ -1,0 +1,51 @@
+package main
+
+import "fmt"
+
+type demo struct {
+	name string
+	age  string
+}
+
+var vj []demo = []demo{
+
+	{"Vijay", "25"},
+	{"Raj", "30"},
+}
+
+type apps struct {
+	n string
+	a string
+}
+
+func test(ty apps) demo {
+
+	dum := demo{
+
+		name: ty.n,
+		age:  ty.a,
+	}
+	return dum
+}
+
+func ops(t []demo) []demo {
+	var converted []demo
+	for _, value := range t {
+
+		ap := apps{
+
+			n: value.name,
+			a: value.age,
+		}
+
+		form := test(ap)
+		converted = append(converted, form)
+	}
+	return converted
+}
+
+func main() {
+
+	values := ops(vj)
+	fmt.Println(values)
+}

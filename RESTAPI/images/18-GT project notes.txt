@@ -1,0 +1,23 @@
+ 
+1. Login and PWD
+
+2. Need to print List of cities and country.
+
+3. then post operation Id 1 dubai 2 Malaysia user shound select id 
+
+4. based on api will give response like Going to the Malasiya APi and asking user information like 
+
+
+Departure:
+       date 
+
+Adukt :  children:
+ 
+5.Then, they need to fill Billing Details user need to fill 
+
+adddress and and all
+
+once done we will say thanks for palced order.
+
+
+6. Implement view cart and where order they can see. 
