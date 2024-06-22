@@ -1,0 +1,154 @@
+/*package main
+
+import "fmt"
+
+type car interface {
+	bmw()
+}
+
+type bus interface {
+	volvo()
+}
+
+type vechicel struct {
+	name  string
+	speed string
+	model int
+	price string
+}
+
+func (b vechicel) bmw() {
+	fmt.Println(b.name, b.speed, b.model, b.price)
+}
+
+func (v vechicel) volvo() {
+	fmt.Println(v.name, v.speed, v.model, v.price)
+}
+
+func main() {
+
+	var sales vechicel = vechicel{name: "BMW", speed: "350km/hr", model: 2021, price: "85,00,000"}
+	var det car = sales
+	det.bmw()
+
+	var sales1 vechicel = vechicel{name: "volvobus", speed: "550km/hr", model: 2024, price: "95,00,000"}
+	var det1 bus = sales1
+	det1.volvo()
+
+}*/
+*********************************************************************************************************************************
+/*package main
+
+import "fmt"
+
+type Shape interface {
+	Area() float64
+}
+
+type Circle struct {
+	Radius float64
+}
+
+type Rectangle struct {
+	Height float64
+	Width  float64
+}
+
+func (c Circle) Area() float64 {
+	return 3.14 * c.Radius * c.Radius
+}
+
+func (r Rectangle) Area() float64 {
+	return r.Height * r.Width
+}
+
+func printArea(s Shape) {
+	fmt.Printf("Area : %f \n", s.Area())
+}
+
+func main() {
+
+	circle := Circle{Radius: 7.0}
+	rectangle := Rectangle{Width: 4.0, Height: 6.0}
+
+	printArea(circle)
+	printArea(rectangle)
+}*/
+*********************************************************************************************************************************
+package main
+
+import "fmt"
+
+type geometry interface {
+	area() float64
+	perimeter() float64
+}
+type graphics struct {
+	maths geometry
+}
+type rect struct {
+	width  float64
+	height float64
+}
+
+func (r rect) area() float64 {
+
+	return r.width * r.height
+}
+func (r rect) perimeter() float64 {
+
+	return 2*r.width + 2*r.height
+}
+func (g graphics) display() {
+
+	fmt.Println("Area:", g.maths.area())
+	fmt.Println("Perimeter:", g.maths.perimeter())
+}
+func main() {
+	rec := rect{width: 2.3, height: 3.7}
+	g := graphics{maths: rec}
+	g.display()
+}
+*********************************************************************************************************************************
+package main
+
+import "fmt"
+
+type animal interface {
+	speak() string
+}
+
+type dog struct{}
+
+func (d dog) speak() string {
+	return "woof!"
+}
+
+type cat struct{}
+
+func (c cat) speak() string {
+	return "mewo!"
+}
+
+func main() {
+
+	animalmap := make(map[string]animal)
+
+	animalslice := []animal{}
+
+	animalmap["dog"] = dog{}
+	animalmap["cat"] = cat{}
+
+	animalslice = append(animalslice, dog{})
+	animalslice = append(animalslice, cat{})
+
+	for key, animal := range animalmap {
+		fmt.Printf("%s say :  %s\n", key, animal.speak())
+	}
+
+	for _, animal := range animalslice {
+		fmt.Printf("This animal says: %s\n", animal.speak())
+	}
+
+}
+*********************************************************************************************************************************

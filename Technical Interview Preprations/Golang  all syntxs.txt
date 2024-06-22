@@ -1,0 +1,105 @@
+Golang Syntx:
+
+1) Go syntx:
+
+package main
+import"fmt"
+type interface_name interface{}
+type struct_name struct{}
+func func_name(){}
+func main(){}
+-------------------------------------
+2) function Syntx:
+
+func main(){
+	display()
+}
+func display(){}
+-------------------------------------
+3) structure Syntx:
+
+type person struct{
+name string
+age int
+}
+-------------------------------------
+4)interface,structure & method Syntx:
+
+type car interface{
+bmwcar()
+}
+type details struct{
+model string
+speed string
+price float
+}
+func (d details) bmwcar(){
+fmt.Println(d.model,d.speed,d.price)
+}
+-------------------------------------
+5)map Syntx:
+
+map_name := make(map[int]string)
+-------------------------------------
+6) slice Syntx:
+
+slice_name := []int{value}
+slice_name := []string{value}
+slice_name := append(slice_name,add_value)
+-------------------------------------
+7)array Syntx:
+
+arr_name := []int{value}
+-------------------------------------
+8)goroutine Syntx:
+
+func main(){
+
+	go func_name(){
+	
+	}()
+}
+-------------------------------------
+9)channel Syntx:
+
+ch_name := make(chan int)
+
+ch <-i
+d := <-ch
+-------------------------------------
+10) waitGroup Syntx:
+
+var wg sync.WaitGroup
+defer wg.Done()
+wg.Add(1)
+wg.Wait()
+
+-------------------------------------
+11) Mutex Syntx:
+
+mutex   sync.Mutex 
+mutex.Lock()
+mutex.UnLock()
+-------------------------------------
+
+
+
+-------------------------------------
+
+
+
+-------------------------------------
+
+
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+

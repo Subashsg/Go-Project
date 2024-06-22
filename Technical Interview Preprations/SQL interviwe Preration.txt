@@ -1,0 +1,30 @@
+ 1)Explain order of execution of SQL?
+	1.From clause 2.Where clause 3. Group by clause  4. Having clause 5. Select clause 6. ORDER BY caluse.
+
+
+2) What is the Difference between Where and Having Clause in SQL?
+
+WHERE CLAUSE:
+	*If “Where” clause is used to filter the records from a table that is based on a specified condition
+	*where are Applicable without GROUP BY clause
+	*where are row function
+	* where have select,update and delete statement
+	*where are applied before GROUP BY clause
+	*Used with single row operations such as Upper, Lower and so on
+HAVING CLAUSE:
+	*“Having” clause is used to filter the record from the groups based on the specified condition.
+	*Does not function without GROUP BY clause
+	*having are Column functions
+	*having has only select statement
+	*Used after GROUP BY clause
+	*Applicable with multiple row functions such as Sum, count and so on
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+2)what is the use of group by in sql?
+
+	*The GROUP BY statement groups rows that have the same values into summary rows, like "find the number of customers in each country".
+
+	*The GROUP BY statement is often used with aggregate functions (COUNT(), MAX(), MIN(), SUM(), AVG()) to group the result-set by one or more columns.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

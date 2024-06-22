@@ -1,0 +1,58 @@
+/*package main
+
+import (
+	"fmt"
+	"time"
+)
+
+func main() {
+
+	fmt.Println("Begin....")
+	go display("hi goroutine.....")
+	time.Sleep(1 * time.Second)
+	fmt.Println("end....")
+}
+
+func display(str string) {
+
+	for i := 0; i <= 5; i++ {
+
+		fmt.Println(str)
+	}
+}*/
+
+package main
+
+import (
+	"fmt"
+	"time"
+)
+
+func main() {
+
+	fmt.Println("function begins.....!")
+	go std()
+	go mark()
+	time.Sleep(1 * time.Second)
+	fmt.Println("function ends.......!")
+}
+
+func std() {
+
+	name := [4]string{"suba", "swetha", "gayu", "nagina"}
+
+	for i := 0; i <= 3; i++ {
+
+		fmt.Printf("%s\n", name[i])
+	}
+}
+
+func mark() {
+
+	name := [4]int{92, 100, 95, 99}
+
+	for i1 := 0; i1 <= 3; i1++ {
+
+		fmt.Printf("%d\n", name[i1])
+	}
+}

@@ -1,0 +1,132 @@
+-------------------------------Credopay-------------------------------
+1) Self_Intro
+2) REST APIs
+3) what are the use of GET,POST,PUT,DELETE.
+4) Difference b/t PUT and PATCH.
+5) An Given Array like [1,2,3,2,4,2,5] this count no of duplicate element present in a array write a code using goroutine and channel.[PROGRAM]
+6) What is struct?
+7) Write a code using map,struct,interface.[PROGRAM]
+8) What are all the database you know?
+9) Write a query for multiple table having student mark top 3 mark flecth and print the query top3 student.[PROGRAM]
+10) Difference b/t WHERE and HAVING in SQL
+11) what is package? what are the package you use in golang.
+12) what is Gin and how to use?
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1) Self_Intro
+2) Difference b/t MySQL and MangoDB.
+3) Difference b/t exist token and refresh token.
+4) Difference b/t array and slice.
+5) I have a empty slice I want to store 4 index directly.
+6) what is make in golang
+7) what is Multi therding in golang.
+
+-------------------------------crystal delta solution-------------------------------
+
+1) explain about goroutine.
+2) difference b/t buffer and unbuffer channel in golang.
+3) what is veriyadic function.
+4) defer and panic in golang
+5) can u explain about function or methods.
+6) what is race condition in go.
+7) what is go root and go path.
+8) interface in go.
+9) what is the use of empty interface.
+10) pointer in go.
+11) what is difference b/t slice and array.
+12) what is type acation.
+13) error package in go.
+-------------------------------crystal delta solution-------------------------------
+2-round
+
+1) explain your recent project in your company.
+2) why do we use golang...?
+3) is it possible to declare different variable of code in single line in golang.
+4) how to you check go map contain a key.
+
+-------------------------------Msys technologies-------------------------------
+
+1) self intro
+2) why we need to use go lang 
+3) what is go routine
+4) what is difference between concurrency and parallelism
+5) what is channels
+6) are you using microservices in your project 
+7) do you have any hands on experience in kubernetes
+8) what databases are you using in your project 
+9) difference between nosql and sql
+10) what is type assertion 
+
+program
+1.code on type assertion and check the type of it
+2.three sum
+ arr =[1,2,5,6,3,4] target = 8
+ o/p =[0,4,5] (or) [0,1,2]
+
+-------------------------------NetXD-------------------------------
+1) what is the interface.
+2) what authentication used in your project.
+3) how to get jwt
+4) what are the frame work you worked in your project.
+5) what is http header
+6) write basic goroutine code iteration 1 to 5 values.
+7) what database you use in your project
+8) write select query for mongodb
+9) wrie select query for mysql._
+
+-------------------------------TCS-------------------------------
+1) create a array [1,2,3,4,5,6] array to slice print the slice value[3,4,5].
+2) what is map ?
+3) write a code for map and using for loop?
+4) what is mutex?
+5) what is goroutine?
+6) write a code for goroutine?
+7) write a code for goroutine using wait group?
+
+-------------------------------Quess-------------------------------
+
+1) Self Introduction.
+2) work Experience in last company.
+3) what are the framework you know.
+4) are you working in echo framework.
+5) what is your gin framework and what are the method use in gin framework.
+6) what is Kafka and Radis 
+6) what is data structure.
+7) how many years do you have work experience in Kubernetes & docker.
+8) in BookMyShow are you work in app side or website side.
+9) what is difference b/t MySQL & Mongodb
+10) using bookmyshow how many record you store in database to handle and retrieve data's.
+11) write a query you have multiple table fetch and get second largest value in table.
+12) write same query in Mongodb.
+
+-------------------------------Capgemini-------------------------------
+
+1) short intro.
+2) work Experience in last company.
+3) what is data strucure.
+4) write a code for non decresing given array.
+5) write a code for link list to create,update and delete values.
+6) write a code for first in first out qeue using link list.
+7) wirte code for sum of three array values.
+
+-------------------------------BlueHouse-------------------------------
+
+1) Tell about your work Experience.
+2) what are the microservice you konw and how to communicate.
+3) when  user send 1000 request per second how to handle and mange respomse to user.
+4) what is Grpc?
+4) what are architecture you use in u r project write flow chart and explain it and do you know monolithic architecture.
+5) In your project seatbooking how to manage and handle for example like number of seat booked,no of canceled, no of waiting seat how to update to user.
+6) write flowchart to explain concurrency parttens.
+7) explain the desgin patterns of go spring boot microservices.
+8) In microservices what is client side code and server side code.
+9) what is API gateway in microservice.
+10) what are the types of api using in Grpc and how to its Work draw flowchart and explain it.
+11) write flowchart and explain your hole Project? what are the model and componand uesd in your project.
+
+---------------------------------------------------------------------------------
+
+
+
+
+

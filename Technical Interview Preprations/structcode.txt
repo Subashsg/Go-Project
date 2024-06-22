@@ -1,0 +1,68 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	sriram := person{
+		id:    1,
+		fname: "sri",
+		lname: "ram",
+		contact: contactinfo{
+			age:        24,
+			contactnum: 12345854},
+	}
+	fmt.Printf("%+v", sriram)
+}
+
+type person struct {
+	id      int
+	fname   string
+	lname   string
+	contact contactinfo
+}
+
+type contactinfo struct {
+	age        int
+	contactnum int
+}
+
+*********************************************************************************************************************************
+package main
+
+import "fmt"
+
+type contactInfo interface {
+	printContactInfo()
+}
+
+type person struct {
+	name string
+	age  int
+	contactinfo
+}
+
+type contactinfo struct {
+	contact int
+	email   string
+}
+
+func (c contactinfo) printContactInfo() {
+	fmt.Printf(c.contact, c.email)
+}
+
+func main() {
+
+ 	std := make(map[string]person)
+
+	std["suba"] = person{name: "suba", age: 24, contactinfo: contactinfo{contact: 2345677654, email: "sub@gmail.com"}}
+	std["gayu"] = person{name: "gayu", age: 19, contactinfo: contactinfo{contact: 8653687865, email: "gayu@gmail.com"}}
+	std["swetha"] = person{name: "swetha", age: 22, contactinfo: contactinfo{contact: 8531010 - 321, email: "swetha@gmail.com"}}
+
+	for _, person := range std {
+
+		fmt.Println(person.name, person.age)
+		person.printContactInfo()
+	}
+}
+**********************************************************************************************************

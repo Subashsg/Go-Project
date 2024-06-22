@@ -1,0 +1,49 @@
+1) Explain purpose of using gin framework in Golang:
+
+i) Gin is a high-performance HTTP web application framework written in Golang.
+ii) Gin allow you to build web application and microservices in go.
+iii) its designed by simplify the development of web application and api.
+iv) In go programming gin is light-weight, fast and flexible framework.
+v) advantage of using gin is fast performance, middleware support, routing, json and error handling.
+vi) Middleware Support: Gin provides a wide range of built-in middleware for common tasks such as authentication, logging, and request parsing
+vii) Gin makes it easy to track errors occurring during an HTTP request.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2) Explain detail about REST API:
+
+i) REST API's stand for Representational state transfer application programming interface.
+ii) rest api is used to deliver user functionality when delaying with website.
+iii) rest api communicate through hhtp request to perform stardard database function like CRUD creating, reading, updating and deleting records with a resourse.
+
+3) what is GRPC in golang:
+i) In Golang, gRPC is implemented through the use of protocol buffers and code generation, which provides a fast and efficient way to build client-server applications.
+ii) Grpc is used to communicate server to server.
+iii) grpc is very fast than rest api they are work with protocol buffer & proto buff work with library likes 0 and 1's.
+iv) grpc is encrpty data type.
+v) grpc use http2 its faster than http. http work with tcp.
+vi) grpc has type of api's
+	* unary
+	* server streaming.
+	* client streaming.
+	* bi-directional streaming.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+4) API status return code
+	
+	200 status ok
+	201 create new resourse.
+	202 Accepted status
+	203 Non-Authoritative Information status
+	204 no content
+i)Client -side API status return code.
+	400 Bad Request
+	401 Unauthorized
+	402 payment to access the requested resource.
+	403 Forbidden
+	404 Not Found
+	429 Too Many Requests
+ii)server-side API status return code.
+	500 Internal Server Error
+	501 Not Implemented
+	502 Bad Gateway
+	503 Service Unavailable
+	504 Gateway Timed Out
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,957 @@
+ https://github.com/aldiramdan/go-hospital
+************************************************
+Subject: Application for [Golang Software Developer] - [V Subash]
+
+Dear [Recruiter's Name],
+
+I hope this email finds you well. I am writing to express my interest in the [Golan
+g Software Developer] opportunity at [Company Name],
+ as advertised [where you found the job posting]. With a strong background in [relevant skills/experience], 
+I am enthusiastic about the possibility of contributing to your team.
+
+Attached is my resume, which provides further detail about my professional background, skills, and achievements.
+
+Thank you for considering my application. I am looking forward to the opportunity to discuss how my background, skills, and enthusiasms align with the needs of your team. 
+Please feel free to contact me at [8531010549] or via email at [subash.info.8531@gmail.com] to schedule a convenient time for an interview.
+
+Thank you for your time and consideration.
+
+Sincerely,s
+[V. Subash]
+[8531010549]
+
+*********************************************************************************************************
+
+1)variable & data type in golang?
+
+	1-basic data type:
+		bool,string,int,int16,int32,int64,float32,float64,unit,byte,run,complex32,64.
+	2-composite data type:
+		array,slice,struct,maps,channels.
+
+eg:
+
+package main
+
+import "fmt"
+
+func main() {
+
+	var id int = 1
+	var name string = "sivan"
+	var percentage float64 = 197.47
+	var boolValue bool = false
+	fmt.Println(id)
+	fmt.Println(name)
+	fmt.Println(percentage)
+	fmt.Println(boolValue)
+}
+**********************************************************************************************************
+
+2) Which compiler or application used for golang?
+
+	1) Go Compiler (go): The Go compiler is a command-line tool that compiles Go source code into executable binaries or libraries.
+	2) Go Build Tool (go build): The Go build tool is used to compile Go source code into executable binaries or libraries. It is a higher-level tool built on top of the Go compiler
+	3) Go package manager('go get,go mod,go tidy'): Go package manager is set of command used to manage go package and dependencies.
+		i) go get : downloading package.
+		ii)go mod init : initalization of new modules.
+		iii)go mod tidy : is cleaning up unused dependencies.
+	4)Go testing tool (go test): Go test tool is used to run tests written go's testing framework.
+	5)Go documentation tool :(godoc): Go documantation tool is used to generate documentation for go code.
+	6)Go formatter tool (gofmt): The Go formatter is a tool used to format Go source code according to the Go coding style guidelines.
+
+**********************************************************************************************************
+3) Syntax used for string data type?
+
+syntax:
+	var string_name string = "string_data"
+eg:
+package main
+
+import "fmt"
+
+func main() {
+
+	var name string = "suba"
+	var education string = "BCA,MCA"
+	var place string = "Trichy NIT"
+	fmt.Println(name, education, place)
+}
+
+**********************************************************************************************************
+4) Application of golang  
+	
+	*Go (or Golang) is a statically typed, compiled programming language designed at Google. 
+	 It has gained popularity due to its simplicity, performance, and powerful standard libraries. 
+
+	1-System Programming,2-Web Development, 3-Networking, 4-DevOps & Cloud Infrastructure, 5-Data Processing, 6-Machine Learning
+	7-Command Line Utilities, 8-Embedded Systems, 9-General-purpose Programming, 10-open source.
+
+**********************************************************************************************************
+
+5) what is go?
+	go is also knw as golang it is a general purpose pograming language desgined it google and developed by robert gerisemer,rob pike & ken thamson in 2007.its statically typed programming language scalable and concurrent software.some key feture in go is
+	1-concurrent programming 2-garbage collection 3-static type 
+	4-simpilicty 5-cross platform 6-performane 7-stand library.
+
+syntx:
+
+package main
+import fmt
+type interface{
+}
+type struct{
+}
+func (){
+}
+func main(){
+}
+
+**********************************************************************************************************
+6)Write your code  in which file  extension
+	*go run filename.go
+	*go build filename.go
+
+-------         ------------------         ---------------------
+7)what is Compiled file extension  in golang?
+	*In Go, when you compile a program using the go build command, it generates a compiled binary file. 
+Windows: .exe (e.g., myprogram.exe)
+Linux: No extension (e.g., myprogram)
+macOS: No extension (e.g., myprogram)
+----------------- ----------------- -------------------------- ----------------------
+8,910)range of data types?
+
+	Int8  ->  how many byte data range  { -127 to 128}
+	Int16  ->  how many byte data range { -32,768 to   32,767  }          
+	Uint8->  how many byte data range  { 0 to 255 }
+**********************************************************************************************************
+11)How many keyword’s have golang?
+
+1-break		6-defer		11-func 		16- if 		21-select
+2-chan       	7-default		12-go		17-map		22-switch
+3-const      	8-else		13-goto		18-package	23-struct.
+4-continue  	9-fallthrough	14-interface	19-return		24- type	
+5-case        	10-for		15-import		20-range		25-var
+
+**********************************************************************************************************
+
+12) what is Const variable ?
+
+eg:
+package main
+
+import "fmt"
+
+const pi = 3.14159
+
+func main() {
+    fmt.Println(pi) // Output: 3.14159
+}
+**********************************************************************************************************
+13)Golang we need start 7 lines of syntax:
+ 
+1-package declaration.
+2-import statment.
+3-command line.
+4-constants & variable.
+5-function declaration.
+6-statement.
+7-whitespace and line break
+
+**********************************************************************************************************
+14) Program execution syntax ?
+
+1-Define the main() function: The main() function is defined with the following syntax:
+eg:
+func main() {
+    // Code to be executed
+}
+2-Import the Required Packages: eg: import "fmt"
+
+3-Call the main() Function: The main()
+
+4-Compile and Run the Program
+
+5-Build an Executable Binary	eg: go build myprogram.go
+
+**********************************************************************************************************
+
+15)Name few Syntax Error | compile time error?
+
+1-Mismatched Parentheses or Brackets eg: fmt.Println("Hello, World!"
+
+2-Missing Semicolon eg:x = 5
+
+3-Extra Semicolon eg: x = 5;;
+
+4-Missing or Misspelled Keywords eg: retrun 0 
+
+5-Missing or Misspelled Keywords eg: fmt.Println(vallue)
+
+6-Incorrect Operator Usage eg:  x = y +
+
+**********************************************************************************************************
+
+16) Name few RunTime Error ?
+
+1-Panic eg:  fmt.Println(x / 0)
+
+2-Array Index Out of Bounds  eg: fmt.Println(arr[3])
+
+3-Nil Pointer Dereference eg: fmt.Println(*ptr)
+
+4-Division by Zero eg:  fmt.Println(x / 0)
+
+5-Out of Memory  eg: arr := make([]int, 1000000000000000)
+
+**********************************************************************************************************
+
+17) Coder life cycle:
+
+1-Understanding Requirements		2-Designing and Planning 		3-Coding and Implementation		4-Testing and Debugging
+5-Deployment	6-Maintenance and Updates		7-Documentation		8-Learning and Improvement
+
+**********************************************************************************************************
+
+18)Product process customer?
+---------------- ---------  -----------------------
+19)Explain memory segment’s?
+
+1-Stack: The stack is used for local variables and function calls
+eg:
+package main
+
+import "fmt"
+
+func main() {
+    var x int = 5 // x is allocated on the stack
+    fmt.Println(x)
+}
+
+2-Heap: The heap is used for dynamically allocated memory, such as objects created with the new keyword or slices
+eg:
+package main
+
+import "fmt"
+
+func main() {
+    var ptr *int = new(int) // allocate memory on the heap
+    *ptr = 5               // assign a value to the allocated memory
+    fmt.Println(*ptr)
+}
+
+3-Global and Static Memory: Global variables and constants are stored in a separate section of memory that is neither the stack nor the heap
+eg:
+package main
+
+import "fmt"
+
+var x int = 5 // x is allocated in global memory
+
+func main() {
+    fmt.Println(x)
+}
+
+**********************************************************************************************************
+20)Explain global variables :
+	
+	* Global variables are declared outside of any function at the top of the file.
+	*  It can accessible from any function within the same package.
+	*  Global variables memory is allocated when the program starts and is freed when the program exits.
+eg:
+package main
+
+import "fmt"
+
+var x int = 5	//global declared variable
+var y int = 10
+
+func main() {
+
+	var c int
+	c = x + y
+	fmt.Println(c)
+}
+
+**********************************************************************************************************
+21)What Is assembly code?
+
+22)What is the compilation process 
+
+23)Why we need to write package main ?
+
+	*package main indicates that the package contains the code for an executable application.
+
+1-Indicating Executable Code
+
+2-Specifying the Entry Point
+
+eg:
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello, World!")
+}
+**********************************************************************************************************
+
+24)Why do we need to write func main(){  }
+
+	*The main() function is the entry point of any executable program
+eg:
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello, World!")
+}
+
+**********************************************************************************************************
+
+25) what is function with example?  
+
+	* Function is a block of code or segment.
+	* function contain set of variables which gets memory when u call a function eg: func (){}.
+
+eg:
+package main
+
+import "fmt"
+
+func main() {
+
+	fmt.Println("function call.....")
+
+	var a, b int = 5, 15
+
+	ret := sum(a, b)
+
+	fmt.Println(ret)
+}
+
+func sum(n1, n2 int) int {
+
+	var c int
+
+	c = n1 + n2
+
+	return c
+}
+
+ii)what is function call?
+
+			*A function call is a statement that invokes a function by its name and passes it arguments. 
+	  When a function is called, the program temporarily suspends its execution and transfers control to the function being called.
+
+1- call by value:
+
+	* A copy of value passed into the function
+	*the change made to the formal parameter does   not effect the actual parameter.
+	*seprate memory location is allocated for actual and formal parameters.
+
+2- Call by reference:
+	
+	* An address of value  passed into the function
+	*the change made to the formal parameter reflect to the actual parameter.
+	*same memory location is allocated for actual and formal parameters.
+**********************************************************************************************************
+
+26)What is function call ? Memory allocation?
+
+	*A function call is a statement that invokes a function by its name and passes it arguments. 
+	  When a function is called, the program temporarily suspends its execution and transfers control to the function being called.
+	*A function call is an expression that passes control and arguments to a function.
+
+**********************************************************************************************************
+27)Difference between local variable vs global variable ?
+
+	local variable                    					global variable
+
+i) local variable are declared inside a function.			i) Global variables are declared outside of a function.
+open { and close } is function when we declare			  when we declare globally it can access any where in a file
+inside a function.it can access only in that function.
+
+ii) we cannot be accessed from outside the function.				eg:
+								package main
+iii) outside of a function a variable die					import "fmt"
+								var x int = 10
+eg:								func main() {
+func main() {								fmt.Println(x)
+    var x int = 10 // This is a local variable					}
+    fmt.Println(x)
+}
+
+**********************************************************************************************************
+28)Use import keyword 
+
+1-Importing a Single Package		eg : import "fmt"
+2-Importing Multiple Packages		eg : import "fmt", import "math"
+3-Importing a Package with an Alias	eg : import f "fmt"
+4-Importing Packages from a Subdirectory eg : import "github.com/example/foo/bar"
+
+**********************************************************************************************************
+29) How to acess library folder in c drive   C:\Go\src
+
+30) Import (“fmt”) ?. fmt folder has ----- go giles ?
+
+**********************************************************************************************************
+31) How can we do a function call for fmt library 
+
+  the fmt package using the import statement import "fmt". Then, within the main function, we make a function call to fmt.Println(). 
+	fmt.Printf(), fmt.Scanf(), fmt.Errorf()
+
+**********************************************************************************************************
+32) For library can we do function call or function definition
+
+	In Go, when you work with libraries, you typically make function calls rather than function definitions.
+
+	i)Importing the Library: First, you import the library into your Go program using the import statement. This allows you to access the functions and types defined within the library.
+
+	ii)Function Calls: Once you've imported the library, you can use its functions by calling them within your own code.
+**********************************************************************************************************
+
+33 & 34)What all operator where do u use it ?
+
+i) Arithmetic Operators:
+
+	Used for performing arithmetic operations such as addition, subtraction, multiplication, division, and remainder.
+	Examples: +, -, *, /, %.
+ii) Comparison Operators:
+
+	Used for comparing values and determining their relationship.
+	Examples: == (equal to), != (not equal to), < (less than), > (greater than), <= (less than or equal to), >= (greater than or equal to).
+iii) Logical Operators:
+
+	Used for performing logical operations such as AND, OR, and NOT.
+	Examples: && (logical AND), || (logical OR), ! (logical NOT).
+iv) Assignment Operators:
+
+	Used for assigning values to variables.
+	Examples: = (simple assignment), += (addition assignment), -= (subtraction assignment), *= (multiplication assignment), /= (division assignment), %= (modulus assignment), &= (bitwise AND assignment), |= (bitwise OR assignment), ^= (bitwise XOR assignment), <<= (left shift assignment), >>= (right shift assignment).
+v) Bitwise Operators:
+
+	Used for performing bitwise operations on integer operands.
+	Examples: & (bitwise AND), | (bitwise OR), ^ (bitwise XOR), &^ (bit clear), << (left shift), >> (right shift).
+vi) Unary Operators:
+
+	Used for performing operations on a single operand.
+	Examples: + (positive), - (negation), ++ (increment), -- (decrement).
+vii) Pointer Operators:
+	
+	Used for working with pointers.
+	Examples: & (address of), * (dereference).
+viii) Range Operator:
+
+	Used in the range keyword for iterating over arrays, slices, maps, and channels.
+	Example: for _, value := range mySlice { ... }.
+ix) Type Assertion and Conversion Operators:
+
+	Used for type assertion and type conversion.
+	Examples: (type) (type assertion), T(v) (type conversion).
+
+**********************************************************************************************************
+35 & 36) Why we need to use loop ? Whether conditions are important in looping statement?
+
+	* A loop is used for executing a block of statement repeatedly agin and agin until the particular condition is reached.
+	* we reduce time to write a code many time we use loop to repate the same code number of times.
+
+**********************************************************************************************************
+37)Which operator used for condition?
+	i) Relational operator
+	ii) Logic operator
+	iii) And other operator
+**********************************************************************************************************
+38) Syntax of for loop
+
+	typei : for(initalize;condition;increment)
+	type2 : for_,variable_name := range variable_name
+	type3 : for i,variable_name := range variable_name
+**********************************************************************************************************
+39) Syntax of if 
+
+	if(condition){
+		true
+	}else{
+		false
+	}
+**********************************************************************************************************
+40) Explain the flow of for loop execution ?
+	
+	i) Initialization
+	ii) Condition Evaluation
+	iii) Loop body ececution
+	iv) Post-Iteration Update
+	v) Back to Condition Evaluation
+**********************************************************************************************************
+41) Multiple  data validation using if elif else  code with example
+
+eg:
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	
+	age := 25
+
+	if age < 0 {
+		fmt.Println("Age cannot be negative.")
+	} else if age < 18 {
+		fmt.Println("You are underage.")
+	} else if age >= 18 && age < 60 {
+		fmt.Println("You are an adult.")
+	} else {
+		fmt.Println("You are a senior citizen.")
+	}
+}
+**********************************************************************************************************
+42) Code stop validation   if with return 
+eg:
+package main
+
+import "fmt"
+
+func validateAge(age int) bool {
+    if age < 0 {
+        fmt.Println("Age cannot be negative.")
+        return false
+    }
+
+    if age < 18 {
+        fmt.Println("You are underage.")
+        return false
+    }
+
+    if age >= 18 && age < 60 {
+        fmt.Println("You are an adult.")
+        return true
+    }
+
+    fmt.Println("You are a senior citizen.")
+    return true
+}
+
+func main() {
+    age := 25
+    isValid := validateAge(age)
+    fmt.Println("Is age valid?", isValid)
+}
+**********************************************************************************************************
+43) How can we do validation in for loop
+
+	i) You can perform validation within a for loop by using conditional statements (if, else if, else) inside 
+	the loop body to check each element of a collection against certain criteria.
+eg:
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	// Example: Validate elements of a slice
+	numbers := []int{10, -5, 20, 0, 30}
+
+	for _, num := range numbers {
+		if num < 0 {
+			fmt.Println(num, "is negative.")
+		} else if num == 0 {
+			fmt.Println(num, "is zero.")
+		} else {
+			fmt.Println(num, "is positive.")
+		}
+	}
+}
+**********************************************************************************************************
+44) Suppose in loop we two  statements when we want to execute only one statement how can we do it?
+	
+	i) If you have multiple statements within a loop, but you only want to execute one of them conditionally,
+	 you can use an if statement to control the execution flow.
+eg:
+package main
+
+import (
+    "fmt"
+)
+
+func main() {
+    // Example: Loop with multiple statements, execute one conditionally
+    numbers := []int{1, 2, 3, 4, 5}
+
+    for _, num := range numbers {
+        if num%2 == 0 {
+            fmt.Println(num, "is even.")
+        } else {
+            fmt.Println(num, "is odd.")
+        }
+        // Additional statement here
+        fmt.Println("This statement is always executed.")
+    }
+}
+**********************************************************************************************************
+45) Why do we need array ?
+
+	i) Array is a collection of element.
+	ii)array is user define data type.
+	iii) array store in contigues memory location.
+	iv) array index start from 0th index.
+	v) an array has a fixed size.
+syntax:
+
+	var arr int = []int{array_element}
+
+eg:
+package main
+
+import "fmt"
+
+func twosum(num []int, target int) []int {
+	res := []int{}
+	for i := 0; i < len(num); i++ {
+		for j := 1; j < len(num); j++ {
+			if num[i]+num[j] == target && i != j {
+
+				res = []int{i, j}
+				return res
+			}
+		}
+	}
+	return res
+}
+func main() {
+	arr := []int{3, 1, 6, 12, 14, 8, 5}
+	target := 7
+	res := twosum(arr, target)
+	fmt.Println(res)
+}
+**********************************************************************************************************
+46) Array contains index & memory size which symbol is used ?
+
+	i) In Go, arrays are declared using square brackets [] with the size of the array specified inside the brackets.
+eg: vae array_name [] datatype.
+**********************************************************************************************************
+47) Array variable internally  use the address of memory index 
+	
+	i) In Go, arrays are value types, not reference types. When you declare an array variable,
+	 it directly holds the elements of the array, not a reference to them.
+eg:
+package main
+
+import "fmt"
+
+func modifyArray(arr [3]int) {
+    arr[0] = 100
+}
+
+func main() {
+    originalArray := [3]int{1, 2, 3}
+    fmt.Println("Original Array:", originalArray) // Output: [1 2 3]
+
+    modifyArray(originalArray)
+    fmt.Println("Modified Array:", originalArray) // Output: [1 2 3]
+}
+**********************************************************************************************************
+48) How to intilisate  an array 
+
+	i)With Values: You can directly initialize an array with specific values enclosed in curly braces {}.
+	eg:var myArray [5]int = [5]int{1, 2, 3, 4, 5}
+
+	ii) Type Inference: You can let the Go compiler infer the size of the array based on the number of elements provided.
+	eg: myArray := [5]int{1, 2, 3, 4, 5}
+**********************************************************************************************************
+49) Difference between static array & dynamic array
+
+	Static Arrays:
+		Size: The size of a static array is fixed at compile time and cannot be changed during runtime.
+		Memory Allocation: Static arrays are allocated memory on the stack or in the data segment of the program's memory space.
+		Declaration: You specify the size of a static array when declaring it.
+		eg: var staticArray [5]int // Declares a static array of size 5
+
+	Dynamic Arrays:
+		Size: The size of a dynamic array can be determined and changed during runtime.
+		Memory Allocation: Dynamic arrays are typically allocated memory on the heap, and their size can grow or shrink dynamically as needed.
+		Declaration: In languages like Go, slices are used to create dynamic arrays. Slices are built on top of arrays and provide dynamic behavior.
+		eg : var dynamicArray []int // Declares a dynamic array (slice)
+		dynamicArray = append(dynamicArray, 1) // Adds an element to the dynamic array
+**********************************************************************************************************
+50) What is len & cpacity function
+
+	In Go, len() and cap() are built-in functions used with slices (dynamic arrays) to retrieve information about the length and capacity of a slice, respectively.
+
+	len() Function:
+
+	The len() function returns the number of elements in a slice.
+	Syntax: len(slice)
+eg:
+package main
+
+import "fmt"
+
+func main() {
+    slice := []int{1, 2, 3, 4, 5}
+    fmt.Println("Length of slice:", len(slice)) // Output: 5
+}
+
+cap() Function:
+
+	The cap() function returns the capacity of a slice, which is the maximum number of elements that the slice can hold without reallocating memory.
+	Syntax: cap(slice)
+eg:
+package main
+
+import "fmt"
+
+func main() {
+    slice := make([]int, 5, 10)
+    fmt.Println("Capacity of slice:", cap(slice)) // Output: 10
+}
+**********************************************************************************************************
+51) Array out of index 
+eg:
+package main
+
+import "fmt"
+
+func main() {
+    myArray := [3]int{1, 2, 3}
+
+    // Attempting to access an element at index 3, which is out of range
+    fmt.Println(myArray[3])
+}
+**********************************************************************************************************
+52) How to loop an array && 53.How to traverse an array using range keyword ?
+	i) In Go, you can loop over the elements of an array using a for loop combined with the range keyword.
+eg:
+package main
+
+import "fmt"
+
+func main() {
+    // Define an array
+    myArray := [5]int{1, 2, 3, 4, 5}
+
+    // Loop over the elements of the array using range
+    for index, value := range myArray {
+        fmt.Printf("Index: %d, Value: %d\n", index, value)
+    }
+}
+**********************************************************************************************************
+54) Syntax of slice 
+
+	var arr int = []int{}
+
+55.Append function to extend the slice data 
+**********************************************************************************************************
+56) Pointer & Syntax of pointer   var p *int
+
+	i) pointer hold the address of another variable. pointer in golang are likewise called special variabe there are two types of operator * and &.
+	ii) pointer are declare using * symbol.
+	iii) * operator to access the value present in the memory address pointed by the pointer.
+	iv) & operator to store the memory address of the variable and assign it to the pointer.
+	v) we can access memory address using the & operator.
+syntax:
+	var p *int, 	var x int = 10
+  			p = &x
+**********************************************************************************************************
+57) Pointer data type memory size
+eg:
+package main
+
+import (
+    "fmt"
+    "unsafe"
+)
+
+func main() {
+    var x int
+    var p *int = &x
+
+    size := unsafe.Sizeof(p)
+    fmt.Println("Size of pointer:", size)
+}
+**********************************************************************************************************
+58) Pointer stores  --- byte address  in 4 bytes memory
+
+On a 32-bit system:
+	Pointers typically occupy 4 bytes of memory.
+	Memory addresses are typically 32 bits (4 bytes) long.
+On a 64-bit system:
+	Pointers typically occupy 8 bytes of memory.
+	Memory addresses are typically 64 bits (8 bytes) long.
+**********************************************************************************************************
+59) How to get an address of variable ?
+
+package main
+
+import "fmt"
+
+func main() {
+    // Declare a variable
+    var x int = 42
+
+    // Get the memory address of the variable
+    address := &x
+
+    // Print the memory address
+    fmt.Println("Memory address of x:", address)
+}
+**********************************************************************************************************
+60) How to derefernce a pointer
+	*To dereference a pointer in Go, you use the dereferencing operator *.
+	 Dereferencing a pointer means accessing the value stored at the memory address pointed to by the pointer.
+eg:
+package main
+
+import "fmt"
+
+func main() {
+    // Declare a variable and a pointer
+    var x int = 42
+    var p *int = &x // p is a pointer to x
+
+    // Dereference the pointer to access the value
+    value := *p
+
+    // Print the value
+    fmt.Println("Value of x:", value) // Output: Value of x: 42
+}
+**********************************************************************************************************
+61) Use of new keyword in ---- Memory segment in go
+
+	* In Go, the new keyword is used to allocate memory for a new zero-initialized value of a specified type. 
+eg:
+package main
+
+import "fmt"
+
+type Person struct {
+    Name string
+    Age  int
+}
+
+func main() {
+    // Using new to allocate memory for a new Person struct
+    p := new(Person)
+
+    // Setting values for the fields of the newly allocated Person
+    p.Name = "John"
+    p.Age = 30
+
+    // Accessing and printing the values
+    fmt.Println("Name:", p.Name)
+    fmt.Println("Age:", p.Age)
+}
+**********************************************************************************************************
+62) New is a function call or function definition
+
+	* In Go, new is a built-in function rather than a function definition. It is a predeclared identifier,
+	 which means it is already declared in the language specification and can be used without prior declaration.
+eg:
+package main
+
+import "fmt"
+
+func main() {
+    // Allocating memory for a new integer
+    p := new(int)
+
+    // Setting the value of the newly allocated integer
+    *p = 42
+
+    // Accessing and printing the value
+    fmt.Println("Value of p:", *p)
+}
+**********************************************************************************************************
+
+
+
+
+
+
+
+4) what is structure with an example?
+	
+	* Structure is a user define data type
+	* structure have different filed and each filed have different data type.
+	* structure have every memory has it own memory space.
+	* structure required lager memory space.
+eg:
+
+	package main
+
+	import "fmt"
+
+	type person struct {
+		name  string
+		age   int
+		place string
+	}
+
+	func main() {
+
+		p := person{name: "ram", age: 29, place: "trichy"}
+
+		fmt.Println(p.name, p.age, p.place)
+
+		p.age = 30
+
+		fmt.Println("Update age : ", p.age)
+	}
+**********************************************************************************************************
+
+
+
+5) what is Array with example?
+
+	*Array is a collection of element.
+	*array is a user define data tye.
+	*array stroe contigouse memory location.
+	*array index start from zero th index.
+	*array has a fixed size.
+syntax:
+	var arrname int = [arr_size]int{arr_values}
+eg:
+// Program to create an array and prints its elements
+
+package main
+import "fmt"
+
+func main() {
+   
+  // declare array variable of type integer
+  // defined size [size=5]
+  var arrayOfInteger = [5]int{1, 5, 8, 0, 3}
+
+  fmt.Println(arrayOfInteger)
+}
+
+**********************************************************************************************************
+
+
+
+
+	
+
+
+
+
+
+
+30) what is map?
+
+	*In go map is a data structure that provides you with an unordered collection of key and value pairs.
+	*map can store n numbers of data
+	*In map we want to allocate data no need to allocate it automatically allocate.
+	*in map we retrive,update,delete with the help of keys.
+
+
+
+
+
+
+
+
